@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
 
 namespace UDPNumberReceiver
 {
@@ -6,7 +9,8 @@ namespace UDPNumberReceiver
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            UDPNumberReceiver udpNumberReceiver = new UDPNumberReceiver();
+            udpNumberReceiver.UDPReceiver();
         }
     }
 }
